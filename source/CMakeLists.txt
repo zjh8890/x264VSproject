@@ -578,7 +578,7 @@ if(ENABLE_CLI)
 	                       filters/video/internal.c  filters/video/resize.c filters/video/cache.c 
 						   filters/video/fix_vfr_pts.c filters/video/select_every.c 
 						   filters/video/crop.c filters/video/depth.c filters/*.h filters/video/*.h )
-    file(GLOB InputFiles input/input.c input/timecode.c input/raw.c input/y4m.c input/*.h)
+    file(GLOB InputFiles input/input.c input/timecode.c input/raw.c input/y4m.c input/thread.c input/*.h)
     file(GLOB OutputFiles output/raw.c output/matroska.c output/matroska_ebml.c
 	                      output/flv.c output/flv_bytestream.c filters/filters.c output/*.h)
 	source_group(filters FILES ${FiltersFiles})
