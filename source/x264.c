@@ -1627,7 +1627,6 @@ generic_option:
 
     /* init threaded input while the information about the input video is unaltered by filtering */
 #if HAVE_THREAD
-	const cli_input_t thread_input = { NULL };
     if( info.thread_safe && (b_thread_input || param->i_threads > 1
         || (param->i_threads == X264_THREADS_AUTO && x264_cpu_num_processors() > 1)) )
     {
